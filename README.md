@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dilli Love</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, pink, lightpink);
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #yes {
+      background: green;
+      color: white;
+    }
+
+    #no {
+      background: red;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Hey, I’m Dilli 😎</h1>
+<p>I’m a simple, honest and caring guy 💖</p>
+<p>Do you like me? 😍</p>
+
+<button id="yes" onclick="yesClick()">Yes 💚</button>
+<button id="no" onmouseover="moveNo()">No 🙈</button>
+
+<br><br>
+<button onclick="insta()">My Instagram 📸</button>
+
+<script>
+function yesClick() {
+  window.open("https://wa.me/916369139682?text=Hi%20Dilli%20❤️");
+  window.open("https://www.instagram.com/__dilli__deee2002tn73/");
+}
+
+function insta() {
+  window.open("https://www.instagram.com/__dilli__deee2002tn73/");
+}
+
+function moveNo() {
+  var x = Math.random() * window.innerWidth;
+  var y = Math.random() * window.innerHeight;
+
+  var btn = document.getElementById("no");
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+}
+</script>
+
+</body>
+</html>
