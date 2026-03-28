@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dilli Love</title>
+  <title>Dilli | Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      text-align: center;
+      margin:0;
       font-family: Arial;
-      background: linear-gradient(to right, pink, lightpink);
-      margin-top: 100px;
+      background: linear-gradient(135deg,#1e3c72,#2a5298);
+      color:white;
+      text-align:center;
     }
 
-    button {
-      padding: 15px 25px;
-      font-size: 18px;
-      margin: 10px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
+    .card {
+      margin:50px auto;
+      padding:25px;
+      width:90%;
+      max-width:400px;
+      background: rgba(255,255,255,0.1);
+      border-radius:20px;
+      backdrop-filter: blur(10px);
     }
 
-    #yes {
-      background: green;
-      color: white;
+    img {
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:3px solid white;
     }
 
-    #no {
-      background: red;
-      color: white;
-      position: absolute;
+    h1 { margin:10px 0; }
+
+    .btn {
+      display:block;
+      margin:10px;
+      padding:12px;
+      border-radius:20px;
+      text-decoration:none;
+      color:white;
+      font-weight:bold;
     }
+
+    .whatsapp { background:#25D366; }
+    .instagram { background:#E1306C; }
   </style>
 </head>
 
 <body>
 
-<h1>Hey, I’m Dilli 😎</h1>
-<p>I’m a simple, honest and caring guy 💖</p>
-<p>Do you like me? 😍</p>
+<div class="card">
+  <img src="my-photo.jpg">
 
-<button id="yes" onclick="yesClick()">Yes 💚</button>
-<button id="no" onmouseover="moveNo()">No 🙈</button>
+  <h1>Dilli</h1>
+  <p>Junior Engineer | Composite Technician</p>
 
-<br><br>
-<button onclick="insta()">My Instagram 📸</button>
+  <p>
+    Skilled in gelcoat, layup, vacuum bagging, infusion process.  
+    Passionate about composite manufacturing 💪
+  </p>
 
-<script>
-function yesClick() {
-  window.open("https://wa.me/916369139682?text=Hi%20Dilli%20❤️");
-  window.open("https://www.instagram.com/__dilli__deee2002tn73/");
-}
+  <h3>Contact Me</h3>
 
-function insta() {
-  window.open("https://www.instagram.com/__dilli__deee2002tn73/");
-}
+  <a class="btn whatsapp" href="https://wa.me/916369139682">
+    WhatsApp Me 📱
+  </a>
 
-function moveNo() {
-  var x = Math.random() * window.innerWidth;
-  var y = Math.random() * window.innerHeight;
+  <a class="btn instagram" href="https://instagram.com/__dilli__deee2002tn73">
+    Instagram 📸
+  </a>
 
-  var btn = document.getElementById("no");
-  btn.style.left = x + "px";
-  btn.style.top = y + "px";
-}
-</script>
+</div>
 
 </body>
 </html>
